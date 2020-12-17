@@ -1,3 +1,5 @@
-*.db
-*.db-journal
 __pycache__
+.key
+key
+key.py
+.key.py
