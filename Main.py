@@ -7,7 +7,6 @@ import youtube_dl
 
 client = discord.Client()
 
-clave = "Nzg4NTgxOTg2NzI5ODUyOTU4.X9lmNA.f-xkaqApOpTIdDMvbAEEyoEkqgQ"
 
 @client.event
 async def on_ready():
