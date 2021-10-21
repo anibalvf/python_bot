@@ -77,6 +77,34 @@ async def quee(ctx):
             voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
         voice.play(discord.FFmpegPCMAudio("audios/quee.mp3"))  
     
+@client.command()
+async def pacoviedma(ctx):
+    await ctx.send(file=discord.File('img/mundo.jpg'))
+    if ctx.author.voice==None:
+        await ctx.send("No puedes escuchar la respuesta conectate a un canal devoz")
+    else:
+        try:
+            channel = ctx.author.voice.channel
+            await channel.connect()
+            voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
+        except:
+            voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
+        voice.play(discord.FFmpegPCMAudio("audios/pacoviedma.mp3"))  
+
+@client.command()
+async def amogus(ctx):
+   
+    if ctx.author.voice==None:
+        await ctx.send("No puedes escuchar la respuesta conectate a un canal devoz")
+    else:
+        try:
+            channel = ctx.author.voice.channel
+            await channel.connect()
+            voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
+        except:
+            voice = discord.utils.get(client.voice_clients, guild=ctx.guild)
+        voice.play(discord.FFmpegPCMAudio("audios/amogus.mp3"))  
+    
 
 
 
